@@ -63,7 +63,7 @@ li a:hover:not(.active) {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 7vw;
+    padding-left: 10vw;
 }
 
 .home-right h1{
@@ -72,19 +72,19 @@ li a:hover:not(.active) {
 }
 
 .home-right h1 {
-  overflow: hidden;
-	border-right: .15em solid MediumSeaGreen;
-  white-space: nowrap; 
-  margin: 0 auto; 
-  letter-spacing: .05em;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: .15em solid MediumSeaGreen; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .05em; /* Adjust as needed */
   animation: 
     typing 7.0s steps(40, end),
     blink-caret .75s step-end infinite;
 }
-
+/* The typing effect */
 @keyframes typing {
   from { width: 0 }
-  to { width: 100% }
+  to { width: 70% }
 }
 @keyframes blink-caret {
   from, to { border-color: transparent }
@@ -93,13 +93,11 @@ li a:hover:not(.active) {
 }
 
 .home-left img{
-    margin-top:60px;
-	margin-left:180px;
-	width:100%;
+    margin-left:100px;
+	object-fit: contain;
+	width:90%;
 	height:520px;
-    position:relative;
-	display:flex;
-    flex-direction: column;
+	margin-top:60px;
 }
 
 .about{
@@ -140,8 +138,7 @@ li a:hover:not(.active) {
     font-size: 2.5rem;
     margin-bottom: 2vh;
 	text-align: center;
-    margin-bottom: 1vh;
-	color:red;
+    color:red;
 }
 
 .skills-row{
@@ -163,7 +160,7 @@ li a:hover:not(.active) {
     margin-bottom: 4vh;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1300px) {
 
     .home-left{
         display: none;
@@ -176,6 +173,10 @@ li a:hover:not(.active) {
     .about{
         padding: 20vh 10vw;
 		
+    }
+	.skills-row{
+        display: flex;
+        flex-direction:column;
     }
 }
     	
@@ -191,9 +192,11 @@ li a:hover:not(.active) {
 }	
 
 .contact-text img{
-    
+    align-items: center;
+    justify-content: center;
     object-fit: contain;
     margin: 1vh 1vw;
+	
 }	
 .card{
    margin: 10px;
@@ -210,12 +213,6 @@ li a:hover:not(.active) {
         bottom: 0;
         width: 100%;
 		color:Green;
-    }
-    .header{
-        position: sticky;
-        top: 0;
-        width: 100%;
-		
     }
 }
 .row{
