@@ -73,7 +73,7 @@ li a:hover:not(.active) {
 
 .home-right h1 {
   overflow: hidden; 
-	border-right: .15em solid MediumSeaGreen; 
+  border-right: .15em solid MediumSeaGreen; 
   white-space: nowrap; 
   margin: 0 auto; 
   letter-spacing: .05em; 
@@ -162,7 +162,7 @@ li a:hover:not(.active) {
 
 @media (max-width: 1300px) {
 
-    .home-right h1{
+    .home-left{
         display: none;
     }
 
