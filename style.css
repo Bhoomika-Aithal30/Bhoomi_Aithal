@@ -162,7 +162,7 @@ li a:hover:not(.active) {
 
 @media (max-width: 1300px) {
 
-    .home-right{
+    .home-right h1{
         display: none;
     }
 
